@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Form with text boxes </title>
+        <meta charset="utf-8">
+        <link href="style.css"
+              rel="stylesheet"
+              type="text/css">
+    </head>
+    
+    <body>
+        
+        <h1>Travel Around The World</h1>
+        <h3>Pleasure to enjoy your vacation</h3>
+        <hr>
+        
+        <div style="background-color: #e8e4e1; margin: auto">
+            <div style="text-align: left">
+                
+                <p><b>Please enter your information here to request a tour:</b></p>
+                <!--The next pair of tags creates an input form-->
+                <form>
+                    <!--A 'label' pair of tags creates a prompt what to write in an input field-->
+                    <label for="fname">First Name:</label>
+                    <br>
+                    <!--This tag creates an input field-->
+                    <input type="text" id="fname" name="fname" maxlength="20" size="30">
+                    <br>
+                    <label for="lname">Last Name:</label>
+                    <br>
+                    <input type="text" id="lname" name="lname" maxlength="20" size="30">
+                    <br>
+                    <label for="street">Street Adress:</label>
+                    <br>
+                    <input type="text" id="street" name="street" maxlength="20" size="30">
+                    <br>
+                    <label for="city">City:</label>
+                    <br>
+                    <input type="text" id="city" name="city" maxlength="20" size="30">
+                    <br>
+                    <label for="postal">Postal Code:</label>
+                    <br>
+                    <input type="text" id="postal" name="postal" maxlength="20" size="30">
+                    <br>
+                    <label for="phone">Phone:</label>
+                    <br>
+                    <input type="text" id="phone" name="phone" maxlength="20" size="30">
+                    <br>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="text" id="email" name="email" maxlength="20" size="30">
+                    <br>
+                </form>
+        
+                <div style="background-color: #ddd7d2; margin: auto">
+                    <br>
+                    
+                    <p><b>Enter your preferable destination:</b></p>
+                    
+                    <form>
+                        <label for="destname">What city would you like to visit:</label>
+                        <br>
+                        <input type="text" id="destname" name="destname" maxlength="20" size="30">
+                        <br>
+                    </form>
+                    <br>
+        
+                    <div style="background-color: #e8e4e1; margin: auto">
+                        
+                        <p><b>Enter your preferable time periods to choose your best price:</b></p>
+                        
+                        <form>
+                            <label for="peroid1">Time period 1:</label>
+                            <br>
+                            <input type="text" id="peroid1" name="peroid1" maxlength="30" size="30">
+                            <br>
+                            <label for="peroid2">Time period 2:</label>
+                            <br>
+                            <input type="text" id="peroid2" name="peroid2" maxlength="30" size="30">
+                            <br>
+                            <label for="peroid3">Time period 3:</label>
+                            <br>
+                            <input type="text" id="peroid3" name="peroid3" maxlength="30" size="30">
+                            <br>
+                        </form>
+                        <br>
+                        
+                        <div style="background-color: #ddd7d2; margin: auto">
+                            
+                           <p><b>How many people are going to tavel:</b></p> 
+                            
+                            <form>
+                                <!--Input type radio creates a choice for a user. Only one can be checked-->
+                                <input type="radio" id="alone" name="people" value="Alone">
+                                <label for="alone">I am alone</label>
+                                <br>
+                                <input type="radio" id="couple" name="people" value="Couple">
+                                <label for="couple">We are a couple</label>
+                                <br>
+                                <input type="radio" id="familyoffour" name="people" value="familyoffour">
+                                <label for="familyoffour">We are a family of four</label>
+                            </form>
+                            <br>
+                            
+                            <div style="background-color: #e8e4e1; margin: auto">
+                                <p><b>To add more details, please, check all that applies:</b></p>
+                                
+                                <form>
+                                    <!--Input type checkbox creates a multiple choice for a user. Several one can be checked-->
+                                    <input type="checkbox" id="passport" name="passport" value="Passport">
+                                    <label for="passport">I have a valid Canadian passport</label>
+                                    <br>
+                                     <input type="checkbox" id="insurance" name="insurance" value="Insurance">
+                                    <label for="insurance">I acquire insurance by myself</label> 
+                                    <br>
+                                    <input type="checkbox" id="transfer" name="transfer" value="Transfer">
+                                    <label for="transfer">I need a transfer to the airport</label>
+                                </form>
+                                
+                            </div>
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+        
+        <form action="/thebuttontonowhere.php">
+            <input type="submit" value="Submit">
+        </form>
+        
+        <p>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="form-text.html">Form Page</a>
+        </p>
+        
+    </body>
+    
+</html>
